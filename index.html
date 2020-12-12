@@ -8,14 +8,17 @@
     <!-- == CSS == -->
     <link rel="stylesheet" href="CSS/style.css">
 
+    <link rel="icon" href="https://www.flaticon.com/svg/static/icons/svg/119/119575.svg">
+
     <!-- == Box Icons == -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
 <body>
-    <!-- Header -->
+
+    <!--------------------------------- Header --------------------------------------------->
     <header class="l-header">
-        <nav class="bd-grid">
+        <nav class="nav bd-grid">
             <div class="nav__toggle" id="nav-toggle">
                 <ion-icon name="grid"></ion-icon>
             </div>
@@ -40,6 +43,7 @@
             </div>
         </nav>
     </header>
+
     <!-- == MAIN == -->
 
     <main class="l-main">
@@ -73,7 +77,7 @@
             <div class="about__container bd-grid">
                 <div class="about__data">
                     <p class="about__description">I am a Python and Front-End Developer. Enhancing current skills and Learning new skills as well.</p>
-                    <img src="/images/about.jpg" alt="" class="about__img">
+                    <img src="images/about.jpg" alt="" class="about__img">
                 </div>
 
                 <div>
@@ -222,16 +226,142 @@
                     <h3 class="services__title">Front-End</h3>
                     <p class="services__description">This service that I offer is of high quality, and I can offer Portfolio, Landing Pages, Ecommerce and Product Card Front-end webpage making.</p>
                 </div>
+                    
+                <div class="services__content">
+                    <ion-icon name="code-working" class="services-icon"></ion-icon>
+                    <h3 class="services__title">Back-End</h3>
+                    <p class="services__description">In this service, I can offer back-end making of some particular tasks in webpage making.</p>
+                </div>
             </div>
         </section>
 
         <!-- PROJECTS -->
+        <section class="project section">
+            <div class="project__container bd-grid">
+                <div class="project__data">
+                    <h2 class="section-title project__title">Do you have a project in mind?</h2>
+                    <p class="project__description">If you have a project that you want to carry out, do not hesitate and tell me what it is, and what services I can offer you, contact me directly here.</p>
+                    <a href="#contact" class="button button__light">Contact Me</a>
+                </div>
+
+                <img src="images/project_img.png" alt="" class="project__img">
+            </div>
+        </section>
+        
         <!-- WORKS -->
+
+        <section class="works section" id="works">
+            <span class="section-subtitle">My Portfolio</span>
+            <h2 class="section-title">Recent Works</h2>
+
+            <div class="works__container bd-grid">
+                <div class="works__img">
+                    <img src="images/work1.jpg" alt="">
+
+                    <div class="works__data">
+                        <a href="#" class="works__link"><ion-icon name="link"></ion-icon></a>
+                        <span class="works__title">Student's Performance Analysis</span>
+                    </div>
+                </div>
+                
+                <div class="works__img">
+                    <img src="images/work2.png" alt="">
+
+                    <div class="works__data">
+                        <a href="#" class="works__link"><ion-icon name="link"></ion-icon></a>
+                        <span class="works__title">Old Cars Price Prediction Model</span>
+                    </div>
+                </div>
+                
+                <div class="works__img">
+                    <img src="images/work4.jpg" alt="">
+
+                    <div class="works__data">
+                        <a href="#" class="works__link"><ion-icon name="link"></ion-icon></a>
+                        <span class="works__title">Battle Script</span>
+                    </div>
+                </div>
+                
+                <div class="works__img">
+                    <img src="images/work4.jpg" alt="">
+
+                    <div class="works__data">
+                        <a href="#" class="works__link"><ion-icon name="link"></ion-icon></a>
+                        <span class="works__title">Web Scraper</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- CONTACT -->
+
+        <section class="contact section" id="contact">
+            <span class="section-subtitle">Contact Me</span>
+            <h2 class="section-title">Get in Touch</h2>
+
+            <div class="contact__container bd-grid">
+                <!-- <form action="mailto:1ac23456789@gmail.com" method="post" enctype="text/plain" class="contact__form">
+                    Name:<br>
+                    <input type="text" name="name"><br>
+                    E-mail:<br>
+                    <input type="text" name="mail"><br>
+                    Comment:<br>
+                    <input type="text" name="comment" size="50"><br><br>
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Reset">
+                </form> -->
+
+                <form action="mailto:1ac23456789@gmail.com" method="post" enctype="text/plain" class="contact__form">
+                    <div class="contact__inputs">
+                        <input type="text" placeholder="Name" name="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" name="E-mail" class="contact__input">
+                    </div>
+                    <input type="text" placeholder="Project" class="contact__input" name="Project">
+
+                    <textarea name="Message" id="" cols="0" rows="10" placeholder="Message" class="contact__input"></textarea> 
+                    <input type="submit" value="Send" class="button contact__button">
+                    <input type="reset" value="Reset" class="button contact__button">
+                </form>
+
+                <div>
+                    <!-- <div class="contact__info">
+                        <h3 class="contact__subtitle">Call me</h3>
+                        <span class="contact__text">+91 87500 74055</span>
+                        <span class="contact__text">+91 87500 74055</span>
+                    </div>
+                    
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">E-mail</h3>
+                        <span class="contact__text">1ac23456789@gmail.com</span>
+                        <span class="contact__text">customerhelp@yahoo.in</span>
+                    </div>
+                    
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">Location</h3>
+                        <span class="contact__text">Ghaziabad, UP, India</span>
+                        <span class="contact__text">+91 87500 74055</span>
+                    </div> -->
+                    <img src="images/contact.png" alt="">
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- == FOOTER == -->
+    <footer class="footer section">
+        <div class="footer__container bd-grid">
+            <h1 class="footer__title">Abhishek Chandra</h1>
+            <p class="footer__description">I am Abhishek and this is my personal website, consult me here.</p>
+            
+            <div class="footer__social">
+                <a href="#" class="footer__link"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#" class="footer__link"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#" class="footer__link"><ion-icon name="logo-discord"></ion-icon></a>
+            </div>
 
+            <p class="footer__copy">All rights reserved. &#169 2020</p>
+        </div>
+    </footer>
 
     <!-- == MAIN JS == -->
     <script src="JS/main.js"></script>
