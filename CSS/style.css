@@ -12,7 +12,7 @@
     --font-bold: 700;
 
     /* Colors */
-    --first-color: #0046c7;
+    --first-color: #E12B38;
     --first-color-dark: #662616;
     --first-color-darken: #071242;
     --text-color: #54523D;
@@ -143,6 +143,7 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--first-color);
 }
 
 .nav__menu{
@@ -176,10 +177,11 @@ img{
 }
 
 .nav__link{
-    font-size: 1.1rem;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 300;
     text-transform: uppercase;
     color: var(--first-color-light);
-    font-weight: var(--h1-font-size);
     transition: .3s;
 }
 
@@ -196,6 +198,7 @@ img{
 .nav__toggle:hover{
     color: var(--second-color);
 }
+
 /* Show Menu */
 .show{
     left: 0;
@@ -299,6 +302,10 @@ img{
 
 /* About */
 
+.about{
+    margin-left: 2rem;
+}
+
 .about__container{
     row-gap: 2rem;
 }
@@ -351,6 +358,10 @@ img{
 
 /* Skills */
 
+.skills{
+    margin-left: 2rem;
+}
+
 .skills__container{
     row-gap: 2rem;
 }
@@ -367,10 +378,16 @@ img{
     justify-content: space-between;
     margin: 0 var(--mb-2);
     margin-bottom: var(--mb-4);
+    justify-items: center;
+    color: rgb(47, 57, 206);
 }
 
 .skills__name{
     text-transform: uppercase;
+}
+
+.skills__data, .skills__subtitle{
+    margin-left: 2rem;
 }
 
 
@@ -556,6 +573,8 @@ img{
 
 .works__img:hover .works__data{
     bottom: 0;
+    background-color: var(--second-color);
+    opacity: 0.8;
 }
 
 /* Contact */
@@ -604,6 +623,11 @@ img{
     padding-left: 1rem;
 }
 
+.message{
+    width: 500px;
+    height: 202px;
+}
+
 
 /* Footer */
 
@@ -638,7 +662,7 @@ img{
 }
 
 .footer__link:hover{
-    background-color: var(--first-color-lighten);
+    background-color: var(--second-color);
     color: var(--first-color);
 }
 
@@ -756,7 +780,11 @@ img{
         margin-right: auto;
     }
 
-    .services__container, .works__container, .skills__container{
+    .services__container, .works__container{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skills__container{
+        grid-template-columns: repeat(3, 1fr);   
     }
 }
