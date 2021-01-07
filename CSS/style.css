@@ -133,7 +133,7 @@ img{
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: var(--first-color-lighten);
+    background-color: var(--first-color-darken);
     box-shadow: 0 2px 4px rgba(0,0,0,.1);
 }
 
@@ -143,14 +143,14 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--first-color);
+    background-color: var(--first-color-darken);
 }
 
 .nav__menu{
     position: fixed;
     top: 0;
     left: -100%;
-    width: 90%;
+    width: 50%;
     height: 100vh;
     padding: 3rem;
     display: flex;
@@ -623,10 +623,10 @@ img{
     padding-left: 1rem;
 }
 
-.message{
+/* .message{
     width: 500px;
     height: 202px;
-}
+} */
 
 
 /* Footer */
@@ -671,6 +671,10 @@ img{
     color: var(--text-color);
 }
 
+.nav__logo:hover{
+    color: var(--second-color);
+}
+
 /* Media Queries */
 @media screen and (min-width: 768px){
     .home__button{
@@ -678,7 +682,7 @@ img{
     }
 
     .nav__menu{
-        width: var(--nav-width);
+        width: 250px;
     }
 
     .about__container, .skills__container, .services__container, .works__container, .contact__container, .contact__inputs{
