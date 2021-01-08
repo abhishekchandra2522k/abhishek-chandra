@@ -12,7 +12,7 @@
     --font-bold: 700;
 
     /* Colors */
-    --first-color: #E12B38;
+    --first-color: #006994;
     --first-color-dark: #662616;
     --first-color-darken: #071242;
     --text-color: #54523D;
@@ -210,6 +210,8 @@ img{
 }
 
 /* HOME */
+
+
 .home__container{
     height: calc(100vh - var(--header-height));
     align-items: center;
@@ -226,8 +228,8 @@ img{
 .home__img{
     padding-top: 0.5rem;
     padding-left: .5rem;
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
     background-color: var(--first-color);
     border-radius: 50%;
     overflow: hidden;
