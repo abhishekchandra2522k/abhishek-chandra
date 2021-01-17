@@ -234,10 +234,11 @@ img{
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: var(--mb-2);
+    pointer-events: none;
 }
 
 .home__img img{
-    widows: 155px;
+    width: 169px;
 }
 
 .home__title{
