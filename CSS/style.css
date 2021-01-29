@@ -4,7 +4,7 @@
 /* Variable CSS */
 :root{
     --header-height: 3rem;
-    --nav-width: 324px;
+    --nav-width: 250px;
 
     /* Font Weights */
     --font-medium: 500;
@@ -19,6 +19,10 @@
     --first-color-light: #EAE7E6;
     --first-color-lighten: #fafaff;
     --second-color: rgb(112, 206, 4);
+    --first-color-menu: #0C5DF4;
+    --bg-color-menu: #12192C;
+    --sub-color-menu: #B6CEFC;
+    --white-color-menu: #fff;
 
     /* Font and typography */
     --body-font: 'Nunito-Sans', sans-serif;
@@ -97,6 +101,7 @@ img{
 /* Class CSS */
 .section{
     padding: 4rem 0 2rem;
+    align-content: center;
 }
 
 .section-title{
@@ -305,10 +310,6 @@ img{
 
 /* About */
 
-.about{
-    margin-left: 2rem;
-}
-
 .about__container{
     row-gap: 2rem;
 }
@@ -360,10 +361,6 @@ img{
 }
 
 /* Skills */
-
-.skills{
-    margin-left: 2rem;
-}
 
 .skills__container{
     row-gap: 2rem;
