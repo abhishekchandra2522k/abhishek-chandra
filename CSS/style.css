@@ -18,7 +18,7 @@
     --text-color: #54523D;
     --first-color-light: #EAE7E6;
     --first-color-lighten: #fafaff;
-    --second-color: rgb(112, 206, 4);
+    --second-color: #071242;
     --first-color-menu: #0C5DF4;
     --bg-color-menu: #12192C;
     --sub-color-menu: #B6CEFC;
@@ -97,6 +97,7 @@ img{
     max-width: 100%;
     height: auto;
     display: block;
+    pointer-events: none;
 }
 /* Class CSS */
 .section{
@@ -138,7 +139,7 @@ img{
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: var(--first-color-darken);
+    background-color: var(--first-color);
     box-shadow: 0 2px 4px rgba(0,0,0,.1);
 }
 
@@ -148,7 +149,7 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--first-color-darken);
+    background-color: var(--first-color);
 }
 
 .nav__menu{
@@ -174,7 +175,7 @@ img{
 }
 
 .nav__close:hover{
-    color: var(--second-color);
+    color: var(--first-color-darken);
 }
 
 .nav__item{
@@ -191,17 +192,17 @@ img{
 }
 
 .nav__link:hover{
-    color: var(--second-color);
+    color: var(--first-color-darken);
 }
 
 .nav__toggle{
-    color: var(--first-color-dark);
+    color: #fff;
     font-size: 1.3rem;
     cursor: pointer;
 }
 
 .nav__toggle:hover{
-    color: var(--second-color);
+    color: var(--first-color-darken);
 }
 
 /* Show Menu */
@@ -269,12 +270,12 @@ img{
     border-radius: 50%;
     padding: .40rem;
     margin: 0 var(--mb-1);
-    transition: .3s;
+    transition: .4s;
 }
 
 .home__social-link:hover{
     background-color: var(--second-color);
-    color: var(--first-color);
+    color: var(--first-color-lighten);
 }
 
 .home__button{
@@ -295,7 +296,7 @@ img{
 
 .button:hover{
     background-color: var(--second-color);
-    color: #fff;
+    color: var(--first-color-lighten);
 }
 
 .button__light{
@@ -305,7 +306,7 @@ img{
 
 .button__light:hover{
     background-color: var(--second-color);
-    color: var(--first-color);
+    color: var(--first-color-lighten);
 }
 
 /* About */
@@ -663,7 +664,7 @@ img{
 
 .footer__link:hover{
     background-color: var(--second-color);
-    color: var(--first-color);
+    color: var(--first-color-lighten);
 }
 
 .footer__copy{
@@ -671,8 +672,12 @@ img{
     color: var(--text-color);
 }
 
+.nav__logo{
+    color: #fff;
+}
+
 .nav__logo:hover{
-    color: var(--second-color);
+    color: var(--first-color-darken);
 }
 
 /* Media Queries */
