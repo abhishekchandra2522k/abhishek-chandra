@@ -65,7 +65,7 @@ html{
 }
 
 body{
-    margin: var(--header-height) 0 0 0;
+    margin: 5rem 0 0 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
@@ -99,6 +99,7 @@ img{
     display: block;
     pointer-events: none;
 }
+
 /* Class CSS */
 .section{
     padding: 4rem 0 2rem;
@@ -139,7 +140,7 @@ img{
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: var(--first-color);
+    background-color: var(--first-color-lighten);
     box-shadow: 0 2px 4px rgba(0,0,0,.1);
 }
 
@@ -149,19 +150,19 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--first-color);
+    background-color: var(--first-color-lighten);
 }
 
 .nav__menu{
     position: fixed;
     top: 0;
     left: -100%;
-    width: 50%;
+    width: 10%;
     height: 100vh;
     padding: 3rem;
     display: flex;
     align-items: center;
-    background-color: var(--first-color);
+    background-color: var(--first-color-lighten);
     transition: .3s;
 }
 
@@ -184,11 +185,9 @@ img{
 
 .nav__link{
     display: inline-block;
-    font-size: 1rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    color: var(--first-color-light);
-    transition: .3s;
+    font-size: 1.5rem;
+    color: var(--first-color);
+    transition: .4s;
 }
 
 .nav__link:hover{
@@ -196,7 +195,7 @@ img{
 }
 
 .nav__toggle{
-    color: #fff;
+    color: var(--first-color);
     font-size: 1.3rem;
     cursor: pointer;
 }
@@ -212,7 +211,7 @@ img{
 
 /* Active Menu */
 .active{
-    color: var(--second-color)
+    color: var(--second-color);
 }
 
 /* HOME */
@@ -673,7 +672,7 @@ img{
 }
 
 .nav__logo{
-    color: #fff;
+    color: var(--first-color);
 }
 
 .nav__logo:hover{
@@ -684,10 +683,6 @@ img{
 @media screen and (min-width: 768px){
     .home__button{
         width: initial;
-    }
-
-    .nav__menu{
-        width: 250px;
     }
 
     .about__container, .skills__container, .services__container, .works__container, .contact__container, .contact__inputs{
@@ -761,7 +756,7 @@ img{
 @media screen and (min-width: 1024px){
     body{
         margin: 0;
-        padding-left: var(--nav-width);
+        padding-left: 100px;
     }
 
     .l-header{
