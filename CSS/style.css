@@ -100,6 +100,25 @@ img{
     display: block;
     pointer-events: none;
 }
+
+/* Scroll bar CSS */
+::-webkit-scrollbar{
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track{
+    background: white;
+    border-radius: 0px;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background-color: var(--first-color);
+    border-radius: 8px;
+  }
+  
+  ::-webkit-scrollbar-track-piece:vertical:end{
+    background: rgb(255, 255, 255);
+  }
+
 /* Class CSS */
 .section{
     padding: 4rem 0 2rem;
@@ -323,6 +342,7 @@ img{
 
 .about__description{
     margin-bottom: var(--mb-4);
+    font-weight: 550;
 }
 
 .about__img{
