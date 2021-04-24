@@ -646,6 +646,43 @@ img{
     padding-left: 1rem;
 }
 
+#status{
+    width: 40%;
+    max-width: 450px;
+    text-align: center;
+    padding: 10px;
+    /* background-color: #006994; */
+    border-radius: 8px;
+}
+
+#status.success{
+    background-color: rgb(196, 235, 139);
+    color: #000;
+    font-weight: bold;
+    animation: status 4s ease forwards;
+}
+#status.error{
+    background-color: rgb(250, 114, 73);
+    color: #fff;
+    font-weight: bold;
+    animation: status 4s ease forwards;
+}
+
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
 /* .message{
     width: 500px;
     height: 202px;
@@ -819,3 +856,20 @@ img{
         grid-template-columns: repeat(3, 1fr);   
     }
 }
+
+
+.theme{
+    position: relative;
+    float: right;
+    margin: 10px 10px;
+    border: 3px solid #006994;
+    border-radius: 35px;
+    padding: 3px;
+    padding-top: 7px;
+    font-size: 25px;
+}
+
+.theme i{
+    cursor: pointer;
+}
+
