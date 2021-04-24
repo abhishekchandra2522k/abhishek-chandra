@@ -19,8 +19,9 @@
     <!--------------------------------- Header --------------------------------------------->
     <header class="l-header">
         <nav class="nav bd-grid">
-            <div class="nav__toggle" id="nav-toggle">
-                <ion-icon name="menu-outline"></ion-icon>
+            <div class="nav__toggle" id="nav-toggle" style="font-size: 15px;">
+                Menu
+                <!-- <ion-icon name="menu-outline"></ion-icon> -->
             </div>
 
             <div>
@@ -48,6 +49,15 @@
 
     <main class="l-main">
         <!-- HOME -->
+        <!-- <section>
+            <div class="theme">
+                <i class='bx bx-radio-circle-marked active' style="color: blue;" id="clicked" onclick="clicked()"></i>
+                <i class='bx bx-radio-circle' style="color: black;" id="clicked" onclick="clicked()"></i>
+                <i class='bx bx-radio-circle' style="color: red;" id="clicked" onclick="clicked()"></i>
+                <i class='bx bx-radio-circle' style="color: yellow;" id="clicked" onclick="clicked()"></i>
+            </div>
+        </section> -->
+
         <section class="home" id="home">
             <div class="home__container bd-grid">
                 <div class="home__data">
@@ -301,49 +311,21 @@
             <h2 class="section-title">Get in Touch</h2>
 
             <div class="contact__container bd-grid">
-                <!-- <form action="mailto:1ac23456789@gmail.com" method="post" enctype="text/plain" class="contact__form">
-                    Name:<br>
-                    <input type="text" name="name"><br>
-                    E-mail:<br>
-                    <input type="text" name="mail"><br>
-                    Comment:<br>
-                    <input type="text" name="comment" size="50"><br><br>
-                    <input type="submit" value="Send">
-                    <input type="reset" value="Reset">
-                </form> -->
-
-                <form action="mailto:1ac23456789@gmail.com" method="post" enctype="text/plain" class="contact__form">
+                <form action="https://formspree.io/f/mknkglnn" method="POST" class="contact__form" id="my-form">
                     <div class="contact__inputs">
-                        <input type="text" placeholder="Name" name="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" name="E-mail" class="contact__input">
+                        <input type="text" placeholder="Name" name="Name" class="contact__input" required>
+                        <input type="mail" placeholder="Email" name="E-mail" class="contact__input" required>
                     </div>
-                    <input type="text" placeholder="Project" class="contact__input" name="Project">
+                    <input type="text" placeholder="Project" class="contact__input" name="Project" required>
 
-                    <input name="Message" id="" cols="0" rows="10" placeholder="Message" class="contact__input message"> 
-                    <input type="submit" value="Send" class="button contact__button">
-                    <input type="reset" value="Reset" class="button contact__button">
+                    <input name="Message" id="" cols="0" rows="10" placeholder="Message" class="contact__input message" required> 
+                    <input type="submit" value="Send" class="button contact__button" name="submit">
+                    <input type="reset" value="Reset" class="button contact__button" name="reset">
                 </form>
-
                 <div>
-                    <!-- <div class="contact__info">
-                        <h3 class="contact__subtitle">Call me</h3>
-                        <span class="contact__text">+91 87500 74055</span>
-                        <span class="contact__text">+91 87500 74055</span>
-                    </div>
-                    
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle">E-mail</h3>
-                        <span class="contact__text">1ac23456789@gmail.com</span>
-                        <span class="contact__text">customerhelp@yahoo.in</span>
-                    </div>
-                    
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle">Location</h3>
-                        <span class="contact__text">Ghaziabad, UP, India</span>
-                        <span class="contact__text">+91 87500 74055</span>
-                    </div> -->
                     <img src="images/contact.png" alt="">
                 </div>
+                <span id="status"></span>
             </div>
         </section>
     </main>
