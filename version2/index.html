@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
 
     <!-- SWIPER CSS -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -30,7 +30,7 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link"><i class="uil uil-estate nav__icon"></i>Home</a>
+                            <a href="#home" class="nav__link active-link"><i class="uil uil-estate nav__icon"></i>Home</a>
                         </li>
                         <li class="nav__item">
                             <a href="#about" class="nav__link"><i class="uil uil-user-square nav__icon"></i>About</a>
@@ -39,7 +39,7 @@
                             <a href="#skills" class="nav__link"><i class="uil uil-file-alt nav__icon"></i>Skills</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#projects" class="nav__link"><i class="uil uil-briefcase-alt nav__icon"></i>Projects</a>
+                            <a href="#portfolio" class="nav__link"><i class="uil uil-briefcase-alt nav__icon"></i>Projects</a>
                         </li>
                         <li class="nav__item">
                             <a href="https://github.com/abhishekchandra2522k" class="nav__link"><i class="uil uil-github-alt nav__icon"></i>GitHub</a>
@@ -52,6 +52,8 @@
                 </div>
 
                 <div class="nav__btns">
+                    <!-- theme change btn -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
                     <div class="nav__toggle" id="nav-toggle">
                         <i class="uil uil-bolt-slash"></i>
                     </div>
@@ -66,9 +68,9 @@
                 <div class="home__container container grid">
                     <div class="home__content grid">
                         <div class="home__social">
-                            <a href="https://www.linkedin.com/in/abhishek-chandra-071977114/" target="_blank" class="home__social"><i class="uil uil-linkedin"></i></a>
-                            <a href="https://twitter.com/abhishek2522000" target="_blank" class="home__social"><i class="uil uil-twitter"></i></a>
-                            <a href="https://abhishekchandra.hashnode.dev/" target="_blank" class="home__social"><img src="assets/imgs/hashnode.png" height="16px" width="16px" alt=""></a>
+                            <a href="https://www.linkedin.com/in/abhishek-chandra-071977114/" target="_blank" class="home__social"><i class="uil uil-linkedin-alt home__social-icon"></i></a>
+                            <a href="https://twitter.com/abhishek2522000" target="_blank" class="home__social"><i class="uil uil-twitter-alt home__social-icon"></i></a>
+                            <a href="https://abhishekchandra.hashnode.dev/" target="_blank" class="home__social"><i class="uil uil-github-alt home__social-icon"></i></a>
                         </div>
 
                         <div class="home__img">
@@ -80,7 +82,7 @@
                                      <path d="M66.7,-18.9C75.7,6.1,64.9,40.2,41,58C17,75.8,-20,77.2,-44,59.9C-68.1,42.6,-79.1,6.7,-69.6,-19C-60.1,-44.6,-30,-59.9,-0.6,-59.7C28.8,-59.5,57.7,-43.8,66.7,-18.9Z" transform="translate(100 100)" />
                                     <image class="home__blob-img" x='37' y='54' xlink:href="assets/imgs/profile.png"/>
                                 </g>
-                              </svg>
+                            </svg>
                         </div>
 
                         <div class="home__data">
@@ -109,7 +111,7 @@
                 <div class="about__container container grid">
                     <img src="assets/imgs/about.jpg" alt="" class="about__img">
                     <div class="about__data">
-                        <p class="about__description">I'm a B.Tech. Information Technology 3rd year student in <a href="https://www.bvcoend.ac.in/" target="_blank">Bharati Vidyapeeth's College Of Engineering</a>, GGSIPU, New Delhi. Currently, I am good at Front-End Development and I'm Learning new skills as well.</p>
+                        <p class="about__description">I'm a B.Tech. Information Technology 3rd year student in <a href="https://www.bvcoend.ac.in/" style="color: var(--text-color);" target="_blank">Bharati Vidyapeeth's College Of Engineering</a>, GGSIPU, New Delhi. Currently, I am good at Front-End Development and I'm Learning new skills as well.</p>
 
                         <div class="about__info">
                             <div>
@@ -148,8 +150,8 @@
                                 <i class="uil uil-brackets-curly skills__icon"></i>
 
                                 <div>
-                                    <h1 class="skills__title">FrontEnd Developer</h1>
-                                    <span class="skills__subtitle">More than 6 months</span>
+                                    <h1 class="skills__title">FrontEnd Development</h1>
+                                    <span class="skills__subtitle"></span>
                                 </div>
                                 <i class="uil uil-angle-double-down skills__arrow"></i>
                             </div>
@@ -193,7 +195,7 @@
                                 <i class="uil uil-server-network-alt skills__icon"></i>
                                 <div>
                                     <h1 class="skills__title">Programming Languages</h1>
-                                    <span class="skills__subtitle">More than 2 months</span>
+                                    <span class="skills__subtitle"></span>
                                 </div>
                                 <i class="uil uil-angle-double-down skills__arrow"></i>
                             </div>
@@ -366,7 +368,7 @@
                                     <!-- <span class="qualification__line"></span> -->
                                 </div>
                                 <div>
-                                    <h3 class="qualification__title">FrontEnd Developer</h3>
+                                    <h3 class="qualification__title">FrontEnd Developer Intern</h3>
                                     <span class="qualification__subtitle">Unsocials Pvt. Ltd.</span>
                                     <div class="qualification__calendar">
                                         <i class="uil uil-calendar-alt"></i>
@@ -382,18 +384,241 @@
                     </div>
                 </div>
             </section>
-            <!-- Skills -->
+
+            <!-- Projects (Recent Works) Portfolio-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle"></span>
+
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- Portfolio 1 -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/imgs/students.png" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Student's Performance Analysis</h3>
+                                <p class="portfolio__description">This project uses Data Analysis to gather data on how a student performance is affected by variables like gender, race etc.</p>
+                                <a href="https://github.com/abhishekchandra2522k/Students-Performance-Analysis-Minor-Project" class="button button--flex button--small portfolio__button">
+                                    Code
+                                    <i class="uil uil-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Portfolio 2 -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/imgs/cars_price_prediction.png" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Price Prediction Of Old Cars</h3>
+                                <p class="portfolio__description">This project predictes the cost of old cars by applying data analytics and machine learning algorithms on the given data set.</p>
+                                <a href="https://github.com/abhishekchandra2522k/ML-MAJOR-JUNE-GC" class="button button--flex button--small portfolio__button">
+                                    Code
+                                    <i class="uil uil-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Portfolio 3 -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/imgs/battle-script.jpg" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Battle Script</h3>
+                                <p class="portfolio__description">This is a battle script (3USR vs 3CMP) project made using Python3 programming language.</p>
+                                <a href="https://github.com/abhishekchandra2522k/battle-script" class="button button--flex button--small portfolio__button">
+                                    Code
+                                    <i class="uil uil-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Portfolio 4 -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/imgs/portfolio.png" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Abhishek Chandra's Portfolio v1</h3>
+                                <p class="portfolio__description">This is a personal portfolio project.</p>
+                                <a href="https://github.com/abhishekchandra2522k/abhishek-chandra/tree/v1.0" class="button button--flex button--small portfolio__button">
+                                    Code
+                                    <i class="uil uil-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Portfolio 5 -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/imgs/unsocials.png" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Unsocials's Official Website</h3>
+                                <p class="portfolio__description">Landing page for Unsocials Marketing Pvt. Ltd. made using HTML, CSS and JavaScript.</p>
+                                <a href="https://abhishekchandra2522k.github.io/landing-page-unsocials/" class="button button--flex button--small portfolio__button">
+                                    Visit
+                                    <i class="uil uil-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Portfolio 6 -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/imgs/najukstudio.png" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Najuk Studio's Official Website</h3>
+                                <p class="portfolio__description">Najuk Studio - A Wedding Photography Website made using HTML, CSS and JS.</p>
+                                <a href="https://najukstudio.in/" class="button button--flex button--small portfolio__button">
+                                    Visit
+                                    <i class="uil uil-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <!-- Portfolio 7 -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/imgs/github.png" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">More on GitHub</h3>
+                                <p class="portfolio__description"></p>
+                                <a href="" class="button button--flex button--small portfolio__button">
+                                    Visit
+                                    <i class="uil uil-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-double-right swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-double-left swiper-portfolio-icon"></i>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <!-- Project In Mind -->
+            <section class="project section">
+                <div class="project__bg">
+                    <div class="project__container container grid">
+                        <div class="project__data">
+                            <h2 class="project__title">Do you have a project in Mind?</h2>
+                            <p class="project__description"></p>
+                            <a href="#contact" class="button button--flex button--white">
+                                Contact Me
+                                <i class="uil uil-message project__icon button__icon"></i>
+                            </a>
+                        </div>
+
+                        <img src="assets/imgs/project_img.png" alt="" class="project__img">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Contact Me</h2>
+                <span class="section__subtitle"></span>
+
+                <div class="contact__container container grid">
+                    <div>
+                        <div class="contact__information">
+                            <i class="uil uil-phone contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title"></h3>
+                                <span class="contact__subtitle">+91 87500 74055</span>
+                            </div>
+                        </div>
+                        <div class="contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title"></h3>
+                                <span class="contact__subtitle">1ac23456789@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact__information">
+                            <i class="uil uil-map-marker contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title"></h3>
+                                <span class="contact__subtitle">Ghaziabad UP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="Name" class="contact__label">Name</label>
+                                <input type="text" name="Name" class="contact__input" required>
+                            </div>
+                            <div class="contact__content">
+                                <label for="email" class="contact__label" oninvalid="this.setCustomValidity('Please Enter valid email')">Email</label>
+                                <input type="email" name="email" class="contact__input" required>
+                            </div>
+                        </div>
+                        <div class="contact__content">
+                            <label for="project" class="contact__label">Project</label>
+                            <input type="text" name="project" class="contact__input" required>
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Message</label>
+                            <textarea id="" cols="" rows="7" name="" class="contact__input"></textarea>
+                        </div>
+                        <div>
+                            <a href="" class="button button--flex">
+                                Send Message
+                                <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </section>
         </main>
 
 
 
         <!-- Footer -->
         <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Abhishek Chandra</h1>
+                        <span class="footer__subtitle">Constant Learner</span>
+                    </div>
 
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#about" class="footer__link">About</a>
+                        </li>
+                        <li>
+                            <a href="#qualification" class="footer__link">Qualification</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="footer__link">Portfolio</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__socials">
+                        <a href="https://www.facebook.com/master.abhishek.2522000/" class="footer__social" target="_blank"><i class="uil uil-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/_abhishekchandra/" class="footer__social" target="_blank"><i class="uil uil-instagram"></i></a>
+                        <a href="https://twitter.com/abhishek2522000" class="footer__social" target="_blank"><i class="uil uil-twitter-alt"></i></a>
+                    </div>
+                </div>
+
+                <p class="footer__copy">&#169;2021 A.C.</p>
+            </div>
         </footer>
 
+        <!-- Scroll Top -->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-angle-double-up scrollup__icon"></i>
+        </a>
+
         <!-- Swiper JS -->
-        <script src=""></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
 
         <!-- Main JS -->
         <script src="assets/js/main.js"></script>
