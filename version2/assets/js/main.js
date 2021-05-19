@@ -167,3 +167,16 @@ themeButton.addEventListener('click', ()=>{
     localStorage.setItem('selected-theme', getCurrentTheme)
     localStorage.getItem('selected-icon', getCurrentIcon)
 })
+
+const toggleMenu = document.getElementById("toggle-theme");
+// const collMenu = document.getElementById("collMenu");
+    
+console.log("loaded");
+
+toggleMenu.addEventListener('change', function(){
+    if(toggleMenu.checked) {
+        document.documentElement.style.setProperty('--hue-color',25);
+    } else {
+        document.documentElement.style.setProperty('--hue-color',250);
+    }
+});
