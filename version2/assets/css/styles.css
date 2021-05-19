@@ -1128,3 +1128,46 @@ img{
         grid-template-columns: 20rem 1fr;
     }
 }
+
+
+#status{
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    /* background-color: var(--first-color-lighter); */
+    border-radius: 8px;
+}
+  
+.status{
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#status.success{
+    background-color: var(--first-color-alt);
+    color: #fff;
+    /* font-weight: bold; */
+    animation: status 4s ease forwards;
+}
+#status.error{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    font-weight: bold;
+    animation: status 3s ease forwards;
+}
+  
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
