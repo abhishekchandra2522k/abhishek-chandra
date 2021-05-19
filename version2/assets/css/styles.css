@@ -3,7 +3,7 @@
     --header-height: 3rem;
 
     /* Colors */
-    --hue-color:250; /* 250 - Purple, 142-Green, 230 - Blue, 340 - Pink*/
+    --hue-color: 250; /* 250 - Purple, 142-Green, 230 - Blue, 340 - Pink*/
 
     /* HSL Color Made */
     --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -987,6 +987,10 @@ img{
         margin: 0;
     }
 
+    #theme-2{
+        padding-right: .6rem;
+    }
+
     .home__container{
         row-gap: 5rem;
     }
@@ -1040,5 +1044,87 @@ img{
     .portfolio__content{
         align-items: center;
     }
+    .project{
+        text-align: initial;
+    }
+    .project__bg{
+        background: none;
+    }
+    .project__container{
+        background-color: var(--first-color-second);
+        border-radius: 3rem;
+        padding: 3rem 2.5rem;
+        grid-template-columns: 1fr max-content;
+        column-gap: 3rem;
+    }
+    .project__data{
+        padding-top: .8rem;
+    }
+    .footer__container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer__bg{
+        padding: 3rem 0 3.5rem;
+    }
+    .footer__links{
+        flex-direction: row;
+        column-gap: 2rem;
+    }
+    .footer__socials{
+        justify-content: flex-end;
+    }
+    .footer__copy{
+        margin-top: 4.5rem;
+    }
 }
 /* Large Devices */
+@media screen and (min-width: 1024px){
+    .header,
+    .main,
+    .footer__container{
+        padding: 0;
+    }
+
+    .home__blob{
+        width: 320px;
+    }
+
+    .home__social{
+        transform: translateX(-4rem);
+    }
+
+    .home__content{
+        grid-template-columns: max-content 30rem 1fr;
+    }
+
+    .portfolio__content{
+        column-gap: 5rem;
+    }
+
+    .swiper-portfolio-icon{
+        font-size: 3.5rem;
+    }
+
+    .swiper-button-prev{
+        left: -3.5rem;
+    }
+
+    .swiper-button-next{
+        right: -3.5rem;
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullets{
+        bottom: -4.5rem;
+    }
+
+    .contact__form{
+        width: 460px;
+    }
+
+    .contact__inputs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer__container{
+        grid-template-columns: 20rem 1fr;
+    }
+}
