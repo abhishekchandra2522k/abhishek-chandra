@@ -25,7 +25,7 @@
         <!-- Header -->
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="#" class="nav__logo">Abhishek Chandra</a>
+                <a href="#home" class="nav__logo">Abhishek Chandra</a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
@@ -108,7 +108,7 @@
             <!-- ABOUT -->
             <section class="about section" id="about">
                 <h2 class="section__title">About Me</h2>
-                <span class="section__subtitle">My Introduction</span>
+                <span class="section__subtitle"></span>
 
                 <div class="about__container container grid">
                     <img src="assets/imgs/about.jpg" alt="" class="about__img">
@@ -300,7 +300,7 @@
                         </div>
                     </div>
 
-                    <div class="qualifiation__section">
+                    <div class="qualification__sections">
                         <!-- Qualification Content 1 -->
                         <div class="qualification__content qualification__active" data-content id="education">
                              <!-- Qualification 1 -->
@@ -550,7 +550,7 @@
                         </div>
                     </div>
 
-                    <form action="" class="contact__form grid">
+                    <form action="https://formspree.io/f/mwkapjyo" class="contact__form grid" method="POST" id="my-form">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="Name" class="contact__label">Name</label>
@@ -566,8 +566,8 @@
                             <input type="text" name="project" class="contact__input" required>
                         </div>
                         <div class="contact__content">
-                            <label for="" class="contact__label">Message</label>
-                            <textarea id="" cols="" rows="7" name="" class="contact__input"></textarea>
+                            <label for="Message" class="contact__label">Message</label>
+                            <input name="Message" class="contact__input" required>
                         </div>
                         <div>
                             <a class="button button--flex">
@@ -575,9 +575,9 @@
                                 <i class="uil uil-message button__icon"></i>
                             </a>
                         </div>
-                        <span id="status"></span>
                     </form>
                 </div>
+                <div class="status"><span id="status"></span></div>
             </section>
         </main>
 
@@ -625,5 +625,31 @@
 
         <!-- Main JS -->
         <script src="assets/js/main.js"></script>
+
+        <script>
+            // Form
+            var form = document.getElementById("my-form");
+            async function handleSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById("status");
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                status.classList.add('success');
+                status.innerHTML = "Thanks for your submission!";
+                // form.reset()
+            }).catch(error => {
+                status.classList.add('success');
+                status.innerHTML = "Oops! There was a problem submitting your form";
+                // form.reset()
+            });
+            }
+            form.addEventListener("submit", handleSubmit)
+        </script>
     </body>
 </html>
